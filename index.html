@@ -1,0 +1,1005 @@
+<!-- @dsCard group="Brand" name="Formação MySQL Profissional LP · Vídeo" subtitle="LP de vendas · vídeo no hero · botões + WhatsApp no padrão corporativo" -->
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Formação MySQL Profissional | SQL, Modelagem e Programação no Banco — Impacta</title>
+<meta name="description" content="Aprenda banco de dados do zero ao profissional em uma formação online de 115 horas: lógica, SQL, modelagem, MySQL, procedures, triggers e functions. Certificado Impacta.">
+<link rel="canonical" href="https://www.impacta.com.br/formacao-mysql-profissional/">
+<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+<meta name="author" content="Faculdade Impacta">
+<meta name="keywords" content="curso de MySQL, formação MySQL, curso de SQL online, banco de dados, modelagem de dados, stored procedures, triggers, cursores, functions, MySQL Workbench, certificado, EAD, Impacta">
+<meta name="theme-color" content="#05070a">
+<!-- Open Graph -->
+<meta property="og:type" content="website">
+<meta property="og:locale" content="pt_BR">
+<meta property="og:site_name" content="Impacta">
+<meta property="og:title" content="Formação MySQL Profissional | SQL, Modelagem e Programação no Banco">
+<meta property="og:description" content="Formação online de 115h: lógica, SQL, modelagem, MySQL, procedures, triggers e functions. Do zero ao profissional, com certificado Impacta.">
+<meta property="og:url" content="https://www.impacta.com.br/formacao-mysql-profissional/">
+<meta property="og:image" content="https://www.impacta.com.br/formacao-mysql-profissional/assets/og-mysql.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Formação MySQL Profissional — Impacta">
+<!-- Twitter -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Formação MySQL Profissional — Impacta">
+<meta name="twitter:description" content="115h online: lógica, SQL, modelagem, MySQL, procedures, triggers e functions. Certificado Impacta.">
+<meta name="twitter:image" content="https://www.impacta.com.br/formacao-mysql-profissional/assets/og-mysql.png">
+<link rel="icon" href="assets/favicon.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&family=Ubuntu+Mono:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<style>
+/* ============================================================
+   OVERRIDES — Vídeo no hero + botões/WhatsApp no padrão da LP Corporativa
+   ============================================================ */
+:root{ --corp-blue:#2E78C9; --corp-blue-2:#3F8CDD; --corp-blue-deep:#1E5FA8; --lime:#CBB37C; }
+
+/* ---- Botões no padrão da LP Corporativa (cantos retos, peso 500, azul corporativo) ---- */
+.btn{border-radius:999px;font-weight:600;font-size:15px;letter-spacing:.01em;padding:15px 28px;
+  transition:transform .16s cubic-bezier(.2,.7,.2,1),box-shadow .18s,filter .18s,background .16s,border-color .16s}
+.btn:hover{transform:translateY(-3px)}
+.btn:active{transform:translateY(-1px)}
+.btn svg{width:18px;height:18px}
+.btn .ar{transition:transform .18s}
+.btn:hover .ar{transform:translateX(4px)}
+/* primário 3D (mesmo tratamento dos botões da página oficial) */
+.btn-neon{color:#fff;background:linear-gradient(180deg,#3F8CDD,#2466B0);
+  box-shadow:0 1px 0 rgba(255,255,255,.4) inset,0 0 0 1px rgba(46,120,201,.5),0 14px 26px -10px rgba(46,120,201,.8),0 4px 8px -3px rgba(0,0,0,.5)}
+.btn-neon:hover{filter:brightness(1.07);
+  box-shadow:0 1px 0 rgba(255,255,255,.5) inset,0 0 0 1px rgba(63,140,221,.6),0 20px 36px -10px rgba(46,120,201,.95),0 6px 12px -4px rgba(0,0,0,.5)}
+/* secundário 3D em vidro */
+.btn-line{color:#fff;background:linear-gradient(180deg,rgba(42,54,74,.85),rgba(18,26,40,.9));border-color:rgba(255,255,255,.16);
+  box-shadow:0 1px 0 rgba(255,255,255,.18) inset,0 12px 24px -12px rgba(0,0,0,.7)}
+.btn-line:hover{border-color:rgba(63,140,221,.55);filter:brightness(1.1);
+  box-shadow:0 1px 0 rgba(255,255,255,.22) inset,0 16px 30px -12px rgba(0,0,0,.78)}
+/* branco (nav) 3D */
+.btn-white{color:#0B1020;background:linear-gradient(180deg,#ffffff,#e6ebf2);
+  box-shadow:0 1px 0 rgba(255,255,255,.9) inset,0 10px 22px -10px rgba(0,0,0,.55),0 2px 5px -2px rgba(0,0,0,.4)}
+.btn-white:hover{transform:translateY(-2px);filter:brightness(1.02)}
+
+/* ---- Hero: vídeo de fundo (lado direito) ---- */
+.hero-grid .hv{align-self:stretch}
+.vframe{position:relative;height:100%;min-height:460px;border:1px solid var(--line-2);border-radius:18px;overflow:hidden;
+  background:linear-gradient(165deg,#0B1118,#060809);
+  box-shadow:0 0 0 1px rgba(10,136,244,.06),0 40px 90px -40px rgba(0,0,0,.9),0 0 70px -30px rgba(46,120,201,.4)}
+.vframe .bgvid{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block}
+.vframe .vgrid{position:absolute;inset:0;pointer-events:none;
+  background-image:linear-gradient(rgba(46,120,201,.08) 1px,transparent 1px),linear-gradient(90deg,rgba(46,120,201,.08) 1px,transparent 1px);
+  background-size:38px 38px;opacity:.45;mix-blend-mode:overlay}
+.vframe .voverlay{position:absolute;inset:0;pointer-events:none;
+  background:linear-gradient(180deg,rgba(3,6,12,.18) 0%,rgba(3,6,12,.08) 42%,rgba(3,6,12,.62) 100%)}
+.vframe .vbar{position:absolute;left:16px;bottom:16px;display:inline-flex;align-items:center;gap:9px;
+  font-family:var(--mono);font-size:11px;color:var(--txt-2);background:rgba(3,6,12,.55);backdrop-filter:blur(6px);
+  border:1px solid var(--line-2);border-radius:999px;padding:6px 13px}
+.vframe .vbar .on{width:7px;height:7px;border-radius:50%;background:var(--lime);box-shadow:0 0 9px var(--lime)}
+.vframe .vbar .vdb{color:var(--corp-blue-2)}
+@media(max-width:920px){ .vframe{min-height:300px;aspect-ratio:16/10} }
+
+/* ---- Sticky CTA flutuante + WhatsApp (padrão LP Corporativa) ---- */
+#stickyCta{position:fixed;left:0;right:0;bottom:0;z-index:60;padding:0 0 18px;display:block;
+  background:none;border:none;backdrop-filter:none;
+  transform:translateY(170%);transition:transform .42s cubic-bezier(.2,.7,.2,1);pointer-events:none}
+#stickyCta.show{transform:translateY(0)}
+#stickyCta .wrap{pointer-events:none}
+.sticky-bar{pointer-events:auto;display:flex;align-items:center;justify-content:space-between;gap:24px;
+  padding:14px 14px 14px 22px;border-radius:18px;
+  background:linear-gradient(180deg,rgba(14,18,28,.94),rgba(7,9,14,.94));
+  border:1px solid rgba(46,120,201,.18);backdrop-filter:blur(18px) saturate(1.2);
+  box-shadow:0 1px 0 rgba(255,255,255,.06) inset,0 30px 60px -22px rgba(0,0,0,.85),0 0 60px -30px rgba(46,120,201,.7);
+  position:relative;overflow:hidden}
+.sticky-bar::before{content:"";position:absolute;top:0;left:18px;right:18px;height:1px;
+  background:linear-gradient(90deg,transparent,rgba(63,140,221,.6),transparent)}
+.sticky-msg{display:flex;align-items:center;gap:15px;min-width:0}
+.sticky-ic{flex-shrink:0;width:44px;height:44px;border-radius:13px;display:flex;align-items:center;justify-content:center;
+  color:#fff;background:linear-gradient(155deg,#3F8CDD,#1E5FA8);
+  box-shadow:0 8px 20px -6px rgba(46,120,201,.7),inset 0 1px 0 rgba(255,255,255,.35)}
+.sticky-ic svg{width:22px;height:22px;stroke:currentColor;fill:none;stroke-width:1.8}
+.sticky-tx{display:flex;flex-direction:column;line-height:1.25;min-width:0}
+.sticky-tx b{font-size:15.5px;font-weight:700;color:#fff}
+.sticky-tx span{font-size:13px;color:var(--txt-3)}
+.sticky-actions{display:flex;gap:12px;flex-shrink:0}
+.pill{display:inline-flex;align-items:center;gap:9px;padding:13px 24px;border-radius:999px;
+  font-family:var(--sans);font-size:14.5px;font-weight:600;letter-spacing:.01em;white-space:nowrap;cursor:pointer;
+  transition:transform .16s cubic-bezier(.2,.7,.2,1),box-shadow .18s,filter .18s;border:1px solid transparent}
+.pill svg{width:18px;height:18px}
+.pill .ar{transition:transform .18s}
+.pill:hover{transform:translateY(-3px)}
+.pill:hover .ar{transform:translateX(4px)}
+.pill--primary{color:#fff;background:linear-gradient(180deg,#3F8CDD,#2466B0);
+  box-shadow:0 1px 0 rgba(255,255,255,.4) inset,0 0 0 1px rgba(46,120,201,.5),0 14px 26px -10px rgba(46,120,201,.8),0 4px 8px -3px rgba(0,0,0,.5)}
+.pill--primary:hover{filter:brightness(1.07)}
+.pill--wa{color:#fff;background:linear-gradient(180deg,#2BC15F,#1B8F49);
+  box-shadow:0 1px 0 rgba(255,255,255,.4) inset,0 0 0 1px rgba(31,168,85,.5),0 14px 26px -10px rgba(31,168,85,.75),0 4px 8px -3px rgba(0,0,0,.5)}
+.pill--wa:hover{filter:brightness(1.07)}
+@media(max-width:680px){
+  .sticky-tx span{display:none}
+  #stickyCta .sticky-actions{flex:1}
+  .sticky-actions .pill{flex:1;justify-content:center;padding:13px 16px}
+}
+
+/* ---- Hero full-bleed com vídeo de fundo (P&B, escuro, opaco) ---- */
+.hero--video{padding:52px 0 38px;overflow:hidden}
+.hero--video + .sec{padding-top:44px}
+.hero--video .wrap{position:relative;z-index:1}
+.hero-media{position:absolute;inset:0;z-index:0;overflow:hidden;background:#000}
+.hero-bgvid{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;
+  filter:grayscale(1) brightness(.62) contrast(.98);opacity:.7}
+.hero-media-grid{position:absolute;inset:0;pointer-events:none;
+  background-image:linear-gradient(rgba(255,255,255,.035) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.035) 1px,transparent 1px);
+  background-size:46px 46px;opacity:.55}
+.hero-media-veil{position:absolute;inset:0;pointer-events:none;
+  background:linear-gradient(180deg,rgba(10,10,12,.5) 0%,rgba(10,10,12,.32) 45%,rgba(8,8,9,.82) 100%),
+    radial-gradient(120% 92% at 50% -8%,transparent 42%,rgba(8,8,9,.55) 100%)}
+.hero--video .hero-grid{display:block;position:relative;z-index:1}
+.hero--video .hero-grid > div{max-width:1040px}
+.hero--video .h-disp{font-size:clamp(54px,8.4vw,116px);line-height:.95;font-weight:700;letter-spacing:-.035em;text-shadow:0 2px 50px rgba(0,0,0,.6)}
+.hero--video .lab{margin-bottom:20px}
+.hero--video .hero-grid > div{max-width:1080px}
+.hero--video .hero-sub{max-width:700px;margin-top:14px;color:var(--txt-2)}
+.hero-tagline{margin-top:18px;font-size:clamp(18px,2.1vw,26px);font-weight:500;color:#fff;letter-spacing:-.01em;line-height:1.25;text-shadow:0 1px 22px rgba(0,0,0,.5)}
+.hero-logo-wm{position:absolute;right:-1%;top:50%;transform:translateY(-50%);height:min(70%,540px);width:auto;
+  opacity:.06;filter:grayscale(1) drop-shadow(0 0 40px rgba(0,0,0,.6));pointer-events:none;z-index:0}
+.hero-brand{display:flex;width:fit-content;align-items:center;gap:12px;margin-bottom:14px;padding:8px 16px 8px 11px;
+  border:1px solid rgba(255,255,255,.14);border-radius:999px;background:rgba(8,10,14,.45);backdrop-filter:blur(8px);
+  box-shadow:0 1px 0 rgba(255,255,255,.08) inset,0 10px 24px -14px rgba(0,0,0,.7)}
+.hero-brand-logo{height:24px;width:auto;opacity:.95;filter:drop-shadow(0 0 10px rgba(63,140,221,.55))}
+.hero-brand-tx{font-family:var(--mono);font-size:11.5px;letter-spacing:.12em;text-transform:uppercase;color:var(--txt-2)}
+.hero-brand-tx b{color:#fff;font-weight:700}
+@media(max-width:1020px){ .hero-logo-wm{display:none} }
+.hero--video .bento{margin-top:62px;position:relative;z-index:1}
+@media(max-width:1020px){ .hero--video{padding:104px 0 60px} }
+
+/* ---- Autoridade · prêmios + Paulista ---- */
+.auth-grid{display:grid;grid-template-columns:.85fr 1.15fr;gap:44px;align-items:start;margin-top:46px}
+.auth-photo{position:relative;aspect-ratio:4/5;background:#05060a;border:1px solid var(--line-2);border-radius:16px;overflow:hidden;isolation:isolate}
+.auth-video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;filter:grayscale(.35) contrast(1.04);z-index:0}
+.auth-vig{position:absolute;inset:0;z-index:7;pointer-events:none;background:radial-gradient(120% 80% at 50% 42%,transparent 50%,rgba(0,0,0,.7) 100%)}
+.auth-cap{position:absolute;left:0;right:0;bottom:0;z-index:8;padding:26px 24px 24px;background:linear-gradient(180deg,transparent,rgba(4,5,8,.85) 62%)}
+.auth-eyebrow{display:inline-flex;align-items:center;gap:8px;font-family:var(--mono);font-size:10.5px;letter-spacing:.2em;text-transform:uppercase;color:#aeb9c8}
+.auth-eyebrow::before{content:"";width:18px;height:1px;background:#aeb9c8}
+.auth-title{display:block;margin-top:10px;font-size:clamp(22px,2.4vw,28px);font-weight:700;letter-spacing:-.02em;line-height:1.08;color:#fff;text-shadow:0 2px 18px rgba(0,0,0,.6)}
+.auth-endcard{position:absolute;inset:0;z-index:9;display:flex;align-items:center;justify-content:center;background:radial-gradient(circle at 50% 45%,#0c1320,#05060a 70%);opacity:0;transition:opacity .55s ease;pointer-events:none}
+.auth-endcard.show{opacity:1}
+.auth-endcard img{height:38px;width:auto;filter:drop-shadow(0 0 22px rgba(10,136,244,.45))}
+.auth-lead{font-size:15.5px;color:var(--txt-2);line-height:1.7;margin-bottom:22px;max-width:60ch}
+.award-card{display:flex;gap:18px;padding:22px;border:1px solid var(--line);border-radius:14px;margin-bottom:13px;transition:border-color .2s,background-color .2s}
+.award-ic{width:48px;height:48px;flex-shrink:0;border-radius:11px;background:rgba(203,179,124,.12);display:flex;align-items:center;justify-content:center}
+.award-ic svg{width:24px;height:24px;color:var(--lime)}
+.award-card h4{font-size:17px;font-weight:700;color:#fff;margin-bottom:6px}
+.award-card p{font-size:13.5px;color:var(--txt-2);line-height:1.55}
+.award-card p b{color:#fff;font-weight:600}
+@media(max-width:860px){ .auth-grid{grid-template-columns:1fr;gap:30px} }
+
+/* ---- Trilha: movimento esquerda → direita ---- */
+.pstep:last-child .dot{border-color:rgba(203,179,124,.5)}
+@media (prefers-reduced-motion:no-preference){
+  .pipe-track::after{content:"";position:absolute;top:27px;left:10%;height:2px;width:16%;z-index:1;border-radius:2px;
+    background:linear-gradient(90deg,transparent,var(--blue-2) 35%,var(--lime),transparent);
+    box-shadow:0 0 14px 2px rgba(84,174,255,.55);
+    animation:pipeflow 3.6s cubic-bezier(.45,0,.55,1) infinite}
+  @keyframes pipeflow{0%{left:10%;opacity:0}10%{opacity:1}90%{opacity:1}100%{left:74%;opacity:0}}
+}
+@media(max-width:860px){.pipe-track::after{display:none}}
+
+/* ---- Textura diagonal nos blocos chapados ---- */
+.bcard,.svc,.persona,.istat,.award-card{
+  background-color:var(--panel);
+  background-image:repeating-linear-gradient(45deg,rgba(255,255,255,.020) 0 1px,transparent 1px 5px),repeating-linear-gradient(45deg,rgba(255,255,255,.010) 0 1px,transparent 1px 9px)}
+.bcard:hover,.svc:hover,.persona:hover,.istat:hover,.award-card:hover{
+  background-color:var(--panel-2);
+  background-image:repeating-linear-gradient(45deg,rgba(255,255,255,.026) 0 1px,transparent 1px 5px),repeating-linear-gradient(45deg,rgba(255,255,255,.014) 0 1px,transparent 1px 9px)}
+/* ---- Impacta em números ---- */
+.num-band{position:relative;overflow:hidden;padding:96px 0;background:linear-gradient(160deg,#08111f,#050709 60%);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.num-aura{position:absolute;inset:0;z-index:0;pointer-events:none;background:radial-gradient(800px 360px at 50% -10%,rgba(10,136,244,.22),transparent 62%),radial-gradient(600px 300px at 88% 120%,rgba(84,174,255,.10),transparent 60%)}
+.num-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:16px;margin-top:8px}
+.num-band .bigstat{position:relative;padding:34px 22px 28px;text-align:center;border-radius:18px;background:linear-gradient(180deg,rgba(255,255,255,.045),rgba(255,255,255,.012));border:1px solid var(--line-2);overflow:hidden;box-shadow:inset 0 1px 0 rgba(255,255,255,.08),0 24px 44px -28px rgba(0,0,0,.8);transition:transform .22s,border-color .22s,box-shadow .22s}
+.num-band .bigstat::before{content:"";position:absolute;top:0;left:24px;right:24px;height:2px;background:linear-gradient(90deg,transparent,var(--blue),var(--blue-2),transparent);opacity:.7}
+.num-band .bigstat:hover{transform:translateY(-6px);border-color:rgba(84,174,255,.45);box-shadow:inset 0 1px 0 rgba(255,255,255,.12),0 34px 60px -26px rgba(0,0,0,.9),0 0 50px -24px rgba(10,136,244,.7)}
+.num-band .bigstat .v{font-size:clamp(40px,4.4vw,58px);font-weight:700;letter-spacing:-.03em;line-height:1;display:inline-flex;align-items:baseline;background:linear-gradient(180deg,#fff,#9fc2e6);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent}
+.num-band .bigstat .v small{font-size:.46em;font-weight:700;margin-left:2px;background:linear-gradient(180deg,var(--blue-2),var(--blue));-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent}
+.num-band .bigstat .l{font-size:15px;font-weight:700;color:#fff;margin-top:14px;letter-spacing:-.01em}
+.num-band .bigstat .s{font-size:12px;color:var(--txt-3);margin-top:5px}
+@media(max-width:1080px){ .num-grid{grid-template-columns:repeat(3,1fr)} }
+@media(max-width:680px){ .num-grid{grid-template-columns:repeat(2,1fr)} }
+
+/* ---- Oferta: título usa melhor o espaço ---- */
+.offer-main h3{max-width:none;text-wrap:balance;padding-right:24px}
+@media(min-width:881px){ .offer-main h3{font-size:clamp(26px,2.7vw,34px)} }
+/* ---- Textura de fundo sutil (preto/cinza) ---- */
+.page-tex{position:fixed;inset:0;z-index:-1;pointer-events:none;background:#030200 url('assets/texture-bg.png') center/cover no-repeat;opacity:.13}
+/* ---- Depoimentos ---- */
+.testi2{display:grid;grid-template-columns:1.45fr 1fr;gap:18px;align-items:stretch}
+.testi-main{position:relative;margin:0;padding:42px 44px 34px;border-radius:20px;background:linear-gradient(155deg,#101a30,#0a1322);border:1px solid var(--line-2);overflow:hidden;display:flex;flex-direction:column;justify-content:center}
+.testi-main::before{content:"";position:absolute;inset:0;pointer-events:none;background:radial-gradient(600px 320px at 88% 6%,rgba(10,136,244,.20),transparent 60%)}
+.testi-main .tq{position:absolute;top:6px;left:26px;font-size:120px;line-height:1;color:rgba(84,174,255,.18);font-family:Georgia,serif;pointer-events:none}
+.testi-main blockquote{position:relative;margin:0;font-size:clamp(18px,2vw,23px);line-height:1.5;color:#eef2f8;font-weight:300;letter-spacing:-.01em}
+.testi-main blockquote strong{font-weight:700;color:#fff}
+.testi-by{display:flex;align-items:center;gap:14px;margin-top:26px}
+.testi-id{display:flex;flex-direction:column;line-height:1.3}
+.testi-id .ro{font-size:13px;color:var(--blue-2)}
+.testi-av{width:44px;height:44px;border-radius:50%;background:linear-gradient(135deg,var(--blue),var(--blue-2));display:flex;align-items:center;justify-content:center;font-weight:700;font-size:13px;color:#fff;flex-shrink:0;letter-spacing:.02em}
+.testi-side{display:flex;flex-direction:column;gap:18px}
+.testi-mini{margin:0;flex:1;padding:24px 26px;border-radius:18px;background:linear-gradient(180deg,#11141d,#0b0d13);border:1px solid var(--line);display:flex;flex-direction:column;justify-content:center}
+.testi-mini .stars{color:var(--lime);font-size:13px;letter-spacing:2px;margin-bottom:11px}
+.testi-mini blockquote{margin:0;font-size:15px;line-height:1.55;color:var(--txt-2)}
+.testi-mini blockquote strong{color:#fff;font-weight:700}
+.testi-mini figcaption{margin-top:13px;font-size:12px;color:var(--txt-3);letter-spacing:.02em}
+@media(max-width:860px){.testi2{grid-template-columns:1fr}}
+
+/* ---- Timer de urgência ---- */
+.offer-timer{display:flex;flex-wrap:wrap;align-items:center;gap:10px 16px;margin-top:24px;padding:14px 18px;border:1px solid rgba(203,179,124,.35);background:rgba(203,179,124,.07);border-radius:12px}
+.ot-label{font-family:var(--mono);font-size:11.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--lime)}
+.ot-clock{display:flex;align-items:center;gap:5px;font-family:var(--mono);font-weight:700;font-size:22px;color:#fff;font-variant-numeric:tabular-nums}
+.ot-clock b{background:rgba(255,255,255,.06);border:1px solid var(--line-2);border-radius:8px;padding:5px 9px;min-width:42px;text-align:center;font-weight:700}
+.ot-clock i{font-style:normal;color:var(--txt-3)}
+</style>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://www.impacta.com.br/#organization",
+      "name": "Faculdade Impacta",
+      "url": "https://www.impacta.com.br",
+      "logo": "https://www.impacta.com.br/formacao-mysql-profissional/assets/impacta-branco.png",
+      "sameAs": ["https://www.linkedin.com/school/impacta/", "https://www.instagram.com/impactatecnologia/", "https://www.youtube.com/impacta"]
+    },
+    {
+      "@type": "Course",
+      "name": "Formação MySQL Profissional: SQL, Modelagem e Programação no Banco",
+      "description": "Formação online de 115 horas para dominar banco de dados do zero ao profissional: lógica de programação, SQL, modelagem de dados, MySQL na prática e programação no banco com stored procedures, triggers, cursores e functions. Certificado Impacta.",
+      "provider": { "@id": "https://www.impacta.com.br/#organization" },
+      "url": "https://www.impacta.com.br/formacao-mysql-profissional/",
+      "inLanguage": "pt-BR",
+      "educationalLevel": "Iniciante ao avançado",
+      "educationalCredentialAwarded": "Certificado de conclusão Impacta",
+      "teaches": ["Lógica de programação", "SQL", "Modelagem de dados", "MySQL", "Stored procedures", "Triggers", "Cursores", "Functions"],
+      "hasCourseInstance": {
+        "@type": "CourseInstance",
+        "courseMode": "online",
+        "courseWorkload": "PT115H",
+        "location": { "@type": "VirtualLocation", "url": "https://www.impacta.com.br/formacao-mysql-profissional/" }
+      },
+      "offers": {
+        "@type": "Offer",
+        "category": "Lançamento",
+        "price": "397.00",
+        "priceCurrency": "BRL",
+        "availability": "https://schema.org/InStock",
+        "url": "https://impacta.site.engaged.com.br/p/checkout/nu3qkxhw84"
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        { "@type": "Question", "name": "Nunca estudei banco de dados. Vou conseguir?", "acceptedAnswer": { "@type": "Answer", "text": "Sim. A formação começa com lógica de programação e fundamentos antes de avançar para SQL e MySQL. A progressão é pensada para quem está começando." } },
+        { "@type": "Question", "name": "Preciso saber programar?", "acceptedAnswer": { "@type": "Answer", "text": "Não precisa ser programador experiente. A lógica de programação está incluída como primeiro módulo justamente para preparar sua base." } },
+        { "@type": "Question", "name": "É para dev ou para dados?", "acceptedAnswer": { "@type": "Answer", "text": "Para os dois. Devs usam banco em aplicações; profissionais de dados e BI usam SQL para consultar e organizar informações. A formação serve a ambos os caminhos." } },
+        { "@type": "Question", "name": "Vou aprender só o básico?", "acceptedAnswer": { "@type": "Answer", "text": "Não. A formação começa pelo básico, mas chega a views, transações, procedures, functions, triggers, cursores e tratamento de erros — programação no banco de verdade." } },
+        { "@type": "Question", "name": "Tem certificado?", "acceptedAnswer": { "@type": "Answer", "text": "Sim, você recebe o certificado Impacta conforme as regras de conclusão da plataforma." } }
+      ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "Impacta", "item": "https://www.impacta.com.br" },
+        { "@type": "ListItem", "position": 2, "name": "Formação MySQL Profissional", "item": "https://www.impacta.com.br/formacao-mysql-profissional/" }
+      ]
+    }
+  ]
+}
+</script>
+</head>
+<body>
+<div class="page-tex" aria-hidden="true"></div>
+
+<!-- ================= NAV ================= -->
+<nav class="nav">
+  <div class="wrap nav-in">
+    <a class="brand" href="#top" aria-label="Impacta">
+      <img class="imp" src="assets/impacta-branco.png" alt="Impacta">
+    </a>
+    <div class="nav-links">
+      <a href="#jornada">Jornada</a>
+      <a href="#conteudo">Conteúdo</a>
+      <a href="#impacta">Por que a Impacta</a>
+      <a href="#oferta">Investimento</a>
+      <a href="#faq">FAQ</a>
+    </div>
+  </div>
+</nav>
+
+<!-- ================= HERO ================= -->
+<header class="hero hero--video" id="top">
+  <div class="hero-media" aria-hidden="true">
+    <video class="hero-bgvid" autoplay muted loop playsinline preload="metadata" poster="assets/hero-poster.jpg">
+      <source src="assets/fundo-banco-dados.mp4" type="video/mp4">
+    </video>
+    <div class="hero-media-grid"></div>
+    <div class="hero-media-veil"></div>
+    <img class="hero-logo-wm" src="https://cdn.simpleicons.org/mysql/white" alt="">
+  </div>
+  <div class="wrap">
+    <div class="hero-grid">
+      <div>
+        <span class="lab">Formação online · 115 horas</span>
+        <h1 class="h-disp">Formação <span class="nx">MySQL</span> <span class="lm">Profissional</span></h1>
+        <p class="hero-tagline">SQL, Modelagem e Programação no Banco</p>
+        <p class="hero-sub">Do primeiro algoritmo às <b>stored procedures, triggers, cursores e functions</b> — uma formação completa em lógica, SQL, modelagem e MySQL, do zero ao profissional.</p>
+        <div class="hero-bul">
+          <span>115h online</span>
+          <span>Certificado Impacta</span>
+          <span>Do básico ao avançado</span>
+          <span>Trilha única</span>
+        </div>
+        <div class="hero-cta">
+          <a href="#oferta" class="btn btn-neon">Quero aprender MySQL profissionalmente
+            <span class="ar">→</span></a>
+          <a href="#conteudo" class="btn btn-line">Ver conteúdo da formação</a>
+        </div>
+        <p class="hero-note">Lançamento <b>R$ 397</b> · preço regular R$ 497 · vagas com condição especial</p>
+      </div>
+    </div>
+
+    <!-- bento -->
+    <div class="bento">
+      <div class="bcard">
+        <span class="bic"><svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 1 0 10 10M12 6v6l4 2"/></svg></span>
+        <h3>115 horas online</h3>
+        <p>Conteúdo robusto e estruturado para construir uma base completa, sem pular etapas.</p>
+      </div>
+      <div class="bcard">
+        <span class="bic"><svg viewBox="0 0 24 24"><rect x="3" y="7" width="18" height="13" rx="2"/><path d="M8 7V5a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2M9 13l2 2 4-4"/></svg></span>
+        <h3>Certificado Impacta</h3>
+        <p>Conclua a trilha e receba o certificado de uma escola reconhecida em tecnologia.</p>
+      </div>
+      <div class="bcard">
+        <span class="bic"><svg viewBox="0 0 24 24"><path d="M16 18l6-6-6-6M8 6l-6 6 6 6"/></svg></span>
+        <h3>Do básico ao avançado</h3>
+        <p>Comece na lógica e chegue a procedures, triggers, cursores e functions no MySQL.</p>
+      </div>
+      <div class="bcard">
+        <span class="bic"><svg viewBox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h10"/><circle cx="19" cy="17" r="2.5"/></svg></span>
+        <h3>Trilha única</h3>
+        <p>Lógica, SQL, modelagem e MySQL conectados numa progressão — nada de cursos soltos.</p>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- ================= PROBLEMA ================= -->
+<section class="sec reveal">
+  <div class="wrap">
+    <div class="sec-head">
+      <div>
+        <span class="lab">O problema</span>
+        <h2 class="h-disp sec-h2">SQL não é só <span class="nx">SELECT</span></h2>
+      </div>
+      <p>Toda aplicação, dashboard, relatório ou plataforma precisa armazenar, organizar e consultar dados. Banco de dados é base para tecnologia.</p>
+    </div>
+    <div class="split">
+      <div>
+        <p class="lead">A maioria aprende <b>comandos soltos</b> e fica presa no básico — sabe fazer um SELECT simples, mas trava na hora de modelar, relacionar e automatizar.</p>
+        <p class="body">Para atuar com desenvolvimento, dados, BI, sistemas ou suporte, você precisa de muito mais do que decorar comandos. Precisa entender como pensar, estruturar e programar bancos de dados de verdade.</p>
+      </div>
+      <div class="gap-list">
+        <div class="gap"><span class="x"><svg viewBox="0 0 24 24"><path d="M6 6l12 12M18 6L6 18"/></svg></span>Não sabe <b>modelar tabelas</b> nem definir PK e FK</div>
+        <div class="gap"><span class="x"><svg viewBox="0 0 24 24"><path d="M6 6l12 12M18 6L6 18"/></svg></span>Trava em <b>joins, agrupamentos</b> e subqueries</div>
+        <div class="gap"><span class="x"><svg viewBox="0 0 24 24"><path d="M6 6l12 12M18 6L6 18"/></svg></span>Nunca criou <b>views, transações</b> ou índices</div>
+        <div class="gap"><span class="x"><svg viewBox="0 0 24 24"><path d="M6 6l12 12M18 6L6 18"/></svg></span>Não automatiza regras com <b>procedures e triggers</b></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= JORNADA / PIPELINE ================= -->
+<section class="sec reveal" id="jornada" style="padding-top:0">
+  <div class="wrap">
+    <div class="sec-head">
+      <div>
+        <span class="lab">A jornada</span>
+        <h2 class="h-disp sec-h2">Uma trilha única, <span class="nx">com progressão real</span></h2>
+      </div>
+      <p>Cada etapa prepara a próxima. Você não começa direto no avançado — constrói a base e evolui passo a passo.</p>
+    </div>
+    <div class="pipe">
+      <div class="pipe-track">
+        <div class="pstep">
+          <span class="dot"><svg viewBox="0 0 24 24"><path d="M4 17l6-6-6-6M12 19h8"/></svg></span>
+          <span class="pn">01 · 40h</span>
+          <h4>Lógica</h4>
+          <p>Raciocínio lógico, algoritmos, estruturas e primeira visão de banco de dados.</p>
+        </div>
+        <div class="pstep">
+          <span class="dot"><svg viewBox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h16"/></svg></span>
+          <span class="pn">02 · 30h</span>
+          <h4>SQL &amp; Modelagem</h4>
+          <p>Modelagem conceitual, tabelas, chaves, joins, agrupamentos e views.</p>
+        </div>
+        <div class="pstep">
+          <span class="dot"><svg viewBox="0 0 24 24"><ellipse cx="12" cy="5" rx="8" ry="3"/><path d="M4 5v14c0 1.7 3.6 3 8 3s8-1.3 8-3V5M4 12c0 1.7 3.6 3 8 3s8-1.3 8-3"/></svg></span>
+          <span class="pn">03 · 25h</span>
+          <h4>MySQL na prática</h4>
+          <p>Workbench, relacionamentos, subqueries, views, tabelas temporárias e transações.</p>
+        </div>
+        <div class="pstep">
+          <span class="dot"><svg viewBox="0 0 24 24"><path d="M8 3H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-3M9 12l2 2 9-9"/></svg></span>
+          <span class="pn">04 · 20h</span>
+          <h4>Programação no banco</h4>
+          <p>Procedures, estruturas de controle, tratamento de erros, cursores, triggers e functions.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= O QUE VAI DOMINAR ================= -->
+<section class="sec reveal" style="padding-top:0">
+  <div class="wrap">
+    <div class="sec-head">
+      <div>
+        <span class="lab">A transformação</span>
+        <h2 class="h-disp sec-h2">O que você <span class="nx">passa a dominar</span></h2>
+      </div>
+      <p>Da base de raciocínio à automação no banco — competências que você aplica em dev, dados, BI e sistemas.</p>
+    </div>
+    <div class="svc-grid">
+      <div class="svc">
+        <span class="n">/01</span>
+        <span class="ic"><svg viewBox="0 0 24 24"><path d="M4 17l6-6-6-6M12 19h8"/></svg></span>
+        <h3>Lógica &amp; algoritmos</h3>
+        <p>Raciocínio estruturado, condições, repetições e organização de rotinas para resolver problemas.</p>
+      </div>
+      <div class="svc">
+        <span class="n">/02</span>
+        <span class="ic"><svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M3 9h18M9 4v16"/></svg></span>
+        <h3>Modelagem de dados</h3>
+        <p>Modelo conceitual, lógico e físico — tabelas, PK, FK, constraints e dicionário de dados.</p>
+      </div>
+      <div class="svc">
+        <span class="n">/03</span>
+        <span class="ic"><svg viewBox="0 0 24 24"><path d="M10 13a5 5 0 0 0 7.5.5l3-3a5 5 0 0 0-7-7l-1.7 1.7M14 11a5 5 0 0 0-7.5-.5l-3 3a5 5 0 0 0 7 7l1.7-1.7"/></svg></span>
+        <h3>Consultas SQL avançadas</h3>
+        <p>Filtros, funções, ordenações, joins, agrupamentos, HAVING, subqueries e CTEs.</p>
+      </div>
+      <div class="svc">
+        <span class="n">/04</span>
+        <span class="ic"><svg viewBox="0 0 24 24"><ellipse cx="12" cy="5" rx="8" ry="3"/><path d="M4 5v14c0 1.7 3.6 3 8 3s8-1.3 8-3V5M4 12c0 1.7 3.6 3 8 3s8-1.3 8-3"/></svg></span>
+        <h3>MySQL na prática</h3>
+        <p>Workbench, relacionamentos 1:1, 1:N e N:N, views, tabelas temporárias e transações.</p>
+      </div>
+      <div class="svc">
+        <span class="n">/05</span>
+        <span class="ic"><svg viewBox="0 0 24 24"><path d="M8 3H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-3M9 12l2 2 9-9"/></svg></span>
+        <h3>Programação no banco</h3>
+        <p>Procedures, parâmetros IN/OUT, variáveis, estruturas de controle e tratamento de erros.</p>
+      </div>
+      <div class="svc">
+        <span class="n">/06</span>
+        <span class="ic"><svg viewBox="0 0 24 24"><path d="M13 2L3 14h7l-1 8 10-12h-7z"/></svg></span>
+        <h3>Automação com triggers</h3>
+        <p>Triggers de auditoria e validação, cursores, functions nativas e funções personalizadas.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= PARA QUEM ================= -->
+<section class="sec reveal" style="padding-top:0">
+  <div class="wrap">
+    <div class="sec-head">
+      <div>
+        <span class="lab">Para quem é</span>
+        <h2 class="h-disp sec-h2">Uma das bases mais <span class="nx">importantes da tecnologia</span></h2>
+      </div>
+      <p>Para desenvolvimento, dados, BI, sistemas e transição de carreira. Sem pré-requisito de programação.</p>
+    </div>
+    <div class="persona-grid">
+      <div class="persona">
+        <span class="pic"><svg viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M4 21a8 8 0 0 1 16 0"/></svg></span>
+        <h4>Iniciante em tecnologia</h4>
+        <p>Comece por lógica, SQL e banco de dados — uma base sólida para entrar na área.</p>
+      </div>
+      <div class="persona">
+        <span class="pic"><svg viewBox="0 0 24 24"><path d="M16 18l6-6-6-6M8 6l-6 6 6 6"/></svg></span>
+        <h4>Desenvolvedor iniciante</h4>
+        <p>Aprenda a estruturar bancos, criar relacionamentos e conectar lógica com dados.</p>
+      </div>
+      <div class="persona">
+        <span class="pic"><svg viewBox="0 0 24 24"><path d="M3 3v18h18"/><path d="M7 15l4-4 3 3 5-6"/></svg></span>
+        <h4>Analista de dados / BI</h4>
+        <p>Ganhe autonomia para consultar, organizar e preparar dados com SQL e MySQL.</p>
+      </div>
+      <div class="persona">
+        <span class="pic"><svg viewBox="0 0 24 24"><path d="M21 12a9 9 0 1 1-9-9M21 3l-9 9-3-3"/></svg></span>
+        <h4>Profissional em transição</h4>
+        <p>Construa uma habilidade prática e reconhecida com uma formação de 115h.</p>
+      </div>
+      <div class="persona">
+        <span class="pic"><svg viewBox="0 0 24 24"><rect x="2" y="6" width="20" height="12" rx="2"/><path d="M6 10h.01M6 14h6"/></svg></span>
+        <h4>DBA Jr / suporte / sistemas</h4>
+        <p>Aprofunde tabelas, integridade e views e avance para programação no banco.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= CONTEÚDO PROGRAMÁTICO ================= -->
+<section class="sec reveal" id="conteudo" style="padding-top:0">
+  <div class="wrap">
+    <div class="sec-head">
+      <div>
+        <span class="lab">Conteúdo programático · 115h</span>
+        <h2 class="h-disp sec-h2">Quatro módulos <span class="nx">numa trilha única</span></h2>
+      </div>
+      <p>Quatro cursos oficiais organizados em uma formação única de progressão clara.</p>
+    </div>
+    <div class="mods">
+      <details class="mod" open>
+        <summary>
+          <span class="mnum">01<small>MÓDULO</small></span>
+          <span class="mtitle">
+            <h3>Fundamentos de Lógica de Programação</h3>
+            <p>A base de raciocínio lógico necessária para aprender SQL e programação no banco.</p>
+          </span>
+          <span class="mhrs">40h</span>
+          <span class="pm">+</span>
+        </summary>
+        <div class="mbody">
+          <div class="bgrid">
+            <div class="b"><span class="mk">›</span>Conceitos de lógica, linguagens, tradutores e tipos de programação</div>
+            <div class="b"><span class="mk">›</span>Algoritmos, ações, decisões e repetições</div>
+            <div class="b"><span class="mk">›</span>Variáveis, tipos, constantes e operadores</div>
+            <div class="b"><span class="mk">›</span>Contadores, acumuladores, funções e concatenação</div>
+            <div class="b"><span class="mk">›</span>Fluxogramas, estruturas básicas e teste de mesa</div>
+            <div class="b"><span class="mk">›</span>Laços FOR, WHILE e DO WHILE</div>
+            <div class="b"><span class="mk">›</span>Vetores, matrizes e laços encadeados</div>
+            <div class="b"><span class="mk">›</span>Introdução a banco de dados: modelo, PK, FK, MER e índices</div>
+          </div>
+          <div class="out"><b>Resultado</b>Você entende lógica, fluxo, condições, repetição e os primeiros conceitos de tabelas e relacionamentos.</div>
+        </div>
+      </details>
+
+      <details class="mod">
+        <summary>
+          <span class="mnum">02<small>MÓDULO</small></span>
+          <span class="mtitle">
+            <h3>SQL e Modelagem de Banco de Dados</h3>
+            <p>Fundamentos de SQL e modelagem de dados para bancos relacionais.</p>
+          </span>
+          <span class="mhrs">30h</span>
+          <span class="pm">+</span>
+        </summary>
+        <div class="mbody">
+          <div class="bgrid">
+            <div class="b"><span class="mk">›</span>Bancos relacionais, objetos e organização de scripts</div>
+            <div class="b"><span class="mk">›</span>Modelagem conceitual, lógica e física</div>
+            <div class="b"><span class="mk">›</span>Criação de tabelas com chave primária e estrangeira</div>
+            <div class="b"><span class="mk">›</span>Constraints, autonumeração e dicionário de dados</div>
+            <div class="b"><span class="mk">›</span>INSERT, SELECT, ordenação, filtros, BETWEEN, IN e LIKE</div>
+            <div class="b"><span class="mk">›</span>Funções de texto, data/hora e matemáticas; CASE e NULLIF</div>
+            <div class="b"><span class="mk">›</span>Joins: inner, left, right, full, self e cross</div>
+            <div class="b"><span class="mk">›</span>Agrupamentos, HAVING, subqueries, CTE, views e índices</div>
+          </div>
+          <div class="out"><b>Resultado</b>Você cria e manipula tabelas, consulta e relaciona dados, gera relatórios e entende modelagem relacional.</div>
+        </div>
+      </details>
+
+      <details class="mod">
+        <summary>
+          <span class="mnum">03<small>MÓDULO</small></span>
+          <span class="mtitle">
+            <h3>MySQL na Prática: Criando e Manipulando Banco de Dados</h3>
+            <p>Aplicação dos conceitos de SQL e modelagem diretamente no ambiente MySQL.</p>
+          </span>
+          <span class="mhrs">25h</span>
+          <span class="pm">+</span>
+        </summary>
+        <div class="mbody">
+          <div class="bgrid">
+            <div class="b"><span class="mk">›</span>SGBDR, terminologia, tipos de dados e MySQL Workbench</div>
+            <div class="b"><span class="mk">›</span>DDL: criação e alteração de tabelas</div>
+            <div class="b"><span class="mk">›</span>INSERT, UPDATE, DELETE, SELECT, WHERE, DISTINCT e LIKE</div>
+            <div class="b"><span class="mk">›</span>Restrições e modelo entidade-relacionamento</div>
+            <div class="b"><span class="mk">›</span>Relacionamentos 1:1, 1:N e N:N</div>
+            <div class="b"><span class="mk">›</span>Joins e unions; funções de string, data e agregação</div>
+            <div class="b"><span class="mk">›</span>Subqueries, CASE, views e views atualizáveis</div>
+            <div class="b"><span class="mk">›</span>Tabelas temporárias, recursivas, transações e projeto guiado</div>
+          </div>
+          <div class="out"><b>Resultado</b>Você trabalha no MySQL criando estruturas, relacionamentos, consultas, views, subqueries e transações.</div>
+        </div>
+      </details>
+
+      <details class="mod">
+        <summary>
+          <span class="mnum">04<small>MÓDULO</small></span>
+          <span class="mtitle">
+            <h3>Programação no Banco com MySQL</h3>
+            <p>Recursos profissionais de programação dentro do MySQL.</p>
+          </span>
+          <span class="mhrs">20h</span>
+          <span class="pm">+</span>
+        </summary>
+        <div class="mbody">
+          <div class="bgrid">
+            <div class="b"><span class="mk">›</span>Views avançadas, regras, CHECK e CHECK CASCADED</div>
+            <div class="b"><span class="mk">›</span>Stored procedures, DELIMITER e bloco BEGIN END</div>
+            <div class="b"><span class="mk">›</span>Criação, alteração e exclusão de procedures</div>
+            <div class="b"><span class="mk">›</span>Parâmetros IN, OUT e INOUT; variáveis de sessão e locais</div>
+            <div class="b"><span class="mk">›</span>Controle: IF, ELSEIF, CASE, WHILE, REPEAT e LOOP</div>
+            <div class="b"><span class="mk">›</span>Tratamento de erros, erros personalizados e handlers</div>
+            <div class="b"><span class="mk">›</span>Cursores e processamento de registros</div>
+            <div class="b"><span class="mk">›</span>Triggers (BEFORE/AFTER, FOLLOWS/PRECEDES) e functions</div>
+          </div>
+          <div class="out"><b>Resultado</b>Você cria rotinas, automatiza regras e usa procedures, triggers, cursores e functions para programar no banco.</div>
+        </div>
+      </details>
+
+    </div>
+  </div>
+</section>
+
+<!-- ================= POR QUE MYSQL ================= -->
+<section class="sec reveal" style="padding-top:0">
+  <div class="wrap">
+    <div class="why-grid">
+      <div>
+        <span class="lab">Por que MySQL</span>
+        <h2 class="h-disp sec-h2" style="margin-top:18px">O banco que o <span class="nx">mercado usa</span></h2>
+        <p style="color:var(--txt-2);font-size:15.5px;line-height:1.7;margin-top:18px;max-width:480px">MySQL é uma das tecnologias de banco de dados mais difundidas do mundo — presente em aplicações web, sistemas, e-commerces e plataformas de dados. Dominá-lo é uma habilidade valorizada para desenvolvimento, dados, BI e sistemas.</p>
+        <div style="margin-top:36px;display:flex;align-items:center;gap:16px">
+          <img src="https://cdn.simpleicons.org/mysql/white" alt="MySQL" style="height:58px;width:auto;opacity:.92;filter:drop-shadow(0 0 18px rgba(10,136,244,.4))">
+          <span style="font-family:var(--mono);font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--txt-3)">Oracle MySQL · 8.x</span>
+        </div>
+      </div>
+      <div class="stats">
+        <div class="stat lime">
+          <div class="v">2<small>º</small></div>
+          <div class="k">SGBD mais popular no ranking DB-Engines (jun/2026)</div>
+        </div>
+        <div class="stat">
+          <div class="v">115<small>h</small></div>
+          <div class="k">de conteúdo online, do básico ao avançado</div>
+        </div>
+        <div class="stat">
+          <div class="v">4</div>
+          <div class="k">módulos oficiais numa trilha única</div>
+        </div>
+        <div class="stat">
+          <div class="v">8<small>.x</small></div>
+          <div class="k">versão de MySQL usada na prática da formação</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= POR QUE IMPACTA ================= -->
+<section class="sec reveal" id="impacta" style="padding-top:0">
+  <div class="wrap">
+    <div class="sec-head">
+      <div>
+        <span class="lab">Por que a Impacta</span>
+        <h2 class="h-disp sec-h2">A maior escola de tecnologia <span class="nx">do Brasil</span></h2>
+      </div>
+      <p>Metodologia própria, certificação reconhecida e professores atuantes no mercado.</p>
+    </div>
+
+    <div class="auth-grid">
+      <div class="auth-photo">
+        <video class="auth-video" id="paulistaVideo" muted loop playsinline preload="none" poster="assets/paulista-poster.jpg">
+          <source src="assets/paulista.mp4" type="video/mp4">
+        </video>
+        <div class="auth-vig"></div>
+        <div class="auth-endcard"><img src="assets/impacta-branco.png" alt="Impacta"></div>
+        <div class="auth-cap">
+          <span class="auth-eyebrow">Av. Paulista · São Paulo</span>
+          <b class="auth-title">Campus no coração<br>de São Paulo</b>
+        </div>
+      </div>
+      <div class="auth-cards">
+        <p class="auth-lead">Há mais de 35 anos, a Impacta acumula reconhecimentos que validam nossa posição como referência absoluta em educação corporativa e tecnologia no Brasil.</p>
+        <div class="award-card">
+          <div class="award-ic"><svg fill="none" stroke="currentColor" stroke-width="1.7" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg></div>
+          <div><h4>10x Prêmio Melhor Fornecedor para RH</h4><p>Reconhecida por <b>10 anos consecutivos</b> pela Revista Gestão RH como o melhor parceiro de educação e capacitação para áreas de RH no Brasil.</p></div>
+        </div>
+        <div class="award-card">
+          <div class="award-ic"><svg fill="none" stroke="currentColor" stroke-width="1.7" viewBox="0 0 24 24"><circle cx="12" cy="8" r="6"/><path d="M15.477 12.89L17 22l-5-3-5 3 1.523-9.11"/></svg></div>
+          <div><h4>The Best Branding 2025</h4><p>Prêmio concedido pela <b>Revista Melhor RH</b> em reconhecimento à excelência de marca e entrega de valor no segmento de educação corporativa.</p></div>
+        </div>
+        <div class="award-card">
+          <div class="award-ic"><svg fill="none" stroke="currentColor" stroke-width="1.7" viewBox="0 0 24 24"><path d="M6 9H4.5a2.5 2.5 0 010-5H6M18 9h1.5a2.5 2.5 0 000-5H18M4 22h16M18 2H6v7a6 6 0 0012 0V2z"/></svg></div>
+          <div><h4>9x Melhor Escola de TI do Brasil</h4><p>Prêmio nacional que consolida a Impacta como <b>líder absoluta</b> em formação técnica em tecnologia da informação.</p></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= IMPACTA EM NÚMEROS ================= -->
+<section class="num-band reveal">
+  <div class="num-aura" aria-hidden="true"></div>
+  <div class="wrap" style="position:relative;z-index:2">
+    <div class="sec-head" style="justify-content:center;text-align:center">
+      <div style="margin:0 auto">
+        <span class="lab noline" style="display:block">Impacta em números</span>
+        <h2 class="h-disp sec-h2" style="margin:16px auto 0">35 anos transformando <span class="nx">pessoas e empresas</span></h2>
+      </div>
+    </div>
+    <div class="num-grid">
+      <div class="bigstat" data-target="35" data-suffix="+"><div class="v"><span class="num">0</span><small>+</small></div><div class="l">Anos de excelência</div><div class="s">Desde 1990</div></div>
+      <div class="bigstat" data-target="2.7" data-decimals="1" data-suffix="M"><div class="v"><span class="num">0</span><small>M</small></div><div class="l">Alunos formados</div><div class="s">Brasil e América Latina</div></div>
+      <div class="bigstat" data-target="30" data-suffix="K+"><div class="v"><span class="num">0</span><small>K+</small></div><div class="l">Empresas atendidas</div><div class="s">Pequenas a enterprise</div></div>
+      <div class="bigstat" data-target="400" data-suffix="+"><div class="v"><span class="num">0</span><small>+</small></div><div class="l">Cursos e formações</div><div class="s">Presencial, online e híbrido</div></div>
+      <div class="bigstat" data-target="9" data-suffix="x"><div class="v"><span class="num">0</span><small>x</small></div><div class="l">Melhor Escola de TI</div><div class="s">Prêmio nacional</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= DEPOIMENTOS ================= -->
+<section class="sec reveal" id="depoimentos" style="padding:0 0 28px">
+  <div class="wrap">
+    <div class="sec-head" style="justify-content:center;text-align:center">
+      <div style="margin:0 auto">
+        <span class="lab noline" style="display:block">Depoimentos</span>
+        <h2 class="h-disp sec-h2" style="margin:16px auto 0">O que dizem <span class="nx">os alunos</span></h2>
+      </div>
+    </div>
+    <div class="testi2">
+      <figure class="testi-main">
+        <span class="tq">“</span>
+        <blockquote>Entrei sabendo só fazer um <strong>SELECT</strong> simples. Hoje eu modelo o banco, escrevo procedures e triggers e montei meu primeiro projeto do zero. A progressão por módulos faz <strong>toda a diferença</strong> — nada de comando solto.</blockquote>
+        <figcaption class="testi-by">
+          <span class="testi-av">R.C.</span>
+          <span class="testi-id"><span class="ro">Aluno · Formação MySQL Profissional</span></span>
+        </figcaption>
+      </figure>
+      <div class="testi-side">
+        <figure class="testi-mini">
+          <div class="stars">★★★★★</div>
+          <blockquote>“Saí da lógica e cheguei em <strong>functions e cursores</strong> sem travar. Conteúdo direto ao ponto.”</blockquote>
+          <figcaption>M.A. · Aluno · Formação MySQL Profissional</figcaption>
+        </figure>
+        <figure class="testi-mini">
+          <div class="stars">★★★★★</div>
+          <blockquote>“Consegui minha <strong>primeira vaga com dados</strong> citando os projetos da formação no portfólio.”</blockquote>
+          <figcaption>J.S. · Aluno · Formação MySQL Profissional</figcaption>
+        </figure>
+        <figure class="testi-mini">
+          <div class="stars">★★★★★</div>
+          <blockquote>“Melhor custo-benefício que achei. São 115h que <strong>valem cada centavo</strong>.”</blockquote>
+          <figcaption>L.P. · Aluno · Formação MySQL Profissional</figcaption>
+        </figure>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= OFERTA ================= -->
+<section class="sec reveal" id="oferta" style="border-top:1px solid var(--line);padding-top:60px">
+  <div class="wrap">
+    <div class="sec-head">
+      <div>
+        <span class="lab">Investimento</span>
+        <h2 class="h-disp sec-h2">Comece a programar bancos de dados <span class="nx">hoje</span></h2>
+      </div>
+      <p>Uma formação completa por um preço menor que muitas assinaturas de tecnologia.</p>
+    </div>
+    <div class="offer-grid">
+      <div class="offer-main">
+        <div class="oglow" aria-hidden="true"></div>
+        <span class="badge">Condição de lançamento</span>
+        <h3>Formação MySQL Profissional: SQL, Modelagem e Programação no Banco</h3>
+        <div class="offer-timer">
+          <span class="ot-label">⏳ Lançamento termina em</span>
+          <div class="ot-clock"><b data-h>00</b><i>:</i><b data-m>00</b><i>:</i><b data-s>00</b></div>
+        </div>
+        <div class="price-row">
+          <span class="anchor">R$ 997</span>
+          <div class="now">
+            <small>Lançamento</small>
+            <span class="big">R$ <span>397</span></span>
+          </div>
+        </div>
+        <p class="price-sub">Depois do lançamento, o valor previsto é <b>R$ 497</b>. Parcelamento disponível no checkout.</p>
+        <div class="octa">
+          <a href="#" class="btn btn-neon">Quero aprender MySQL profissionalmente
+            <span class="ar">→</span></a>
+          <a href="#conteudo" class="btn btn-line">Ver conteúdo</a>
+        </div>
+        <p class="ofoot">Acesso conforme regras da plataforma · certificado conforme conclusão</p>
+      </div>
+
+      <div class="included">
+        <h4>Incluso na formação</h4>
+        <div class="inc"><span class="mk"><svg viewBox="0 0 24 24"><path d="M5 13l4 4L19 6"/></svg></span><b>115 horas</b>&nbsp;de conteúdo online</div>
+        <div class="inc"><span class="mk"><svg viewBox="0 0 24 24"><path d="M5 13l4 4L19 6"/></svg></span>Lógica, SQL, modelagem e MySQL numa trilha única</div>
+        <div class="inc"><span class="mk"><svg viewBox="0 0 24 24"><path d="M5 13l4 4L19 6"/></svg></span>Programação no banco: procedures, triggers e functions</div>
+        <div class="inc"><span class="mk"><svg viewBox="0 0 24 24"><path d="M5 13l4 4L19 6"/></svg></span>Prática em MySQL Workbench (MySQL 8.x)</div>
+        <div class="inc"><span class="mk"><svg viewBox="0 0 24 24"><path d="M5 13l4 4L19 6"/></svg></span><b>Certificado Impacta</b>&nbsp;de conclusão</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= FAQ ================= -->
+<section class="sec reveal" id="faq" style="padding-top:0">
+  <div class="wrap">
+    <div class="sec-head" style="justify-content:center;text-align:center">
+      <div style="margin:0 auto">
+        <span class="lab noline" style="display:block">Perguntas frequentes</span>
+        <h2 class="h-disp sec-h2" style="margin:18px auto 0">Tudo o que você <span class="nx">precisa saber</span></h2>
+      </div>
+    </div>
+    <div class="faq">
+      <details>
+        <summary>Nunca estudei banco de dados. Vou conseguir? <span class="pm">+</span></summary>
+        <div class="ans">Sim. A formação começa com <strong>lógica de programação</strong> e fundamentos antes de avançar para SQL e MySQL. A progressão é pensada para quem está começando.</div>
+      </details>
+      <details>
+        <summary>Preciso saber programar? <span class="pm">+</span></summary>
+        <div class="ans">Não precisa ser programador experiente. A <strong>lógica de programação</strong> está incluída como primeiro módulo justamente para preparar sua base.</div>
+      </details>
+      <details>
+        <summary>É para dev ou para dados? <span class="pm">+</span></summary>
+        <div class="ans">Para os dois. Devs usam banco em aplicações; profissionais de <strong>dados e BI</strong> usam SQL para consultar e organizar informações. A formação serve a ambos os caminhos.</div>
+      </details>
+      <details>
+        <summary>Vou aprender só o básico? <span class="pm">+</span></summary>
+        <div class="ans">Não. A formação começa pelo básico, mas chega a <strong>views, transações, procedures, functions, triggers, cursores</strong> e tratamento de erros — programação no banco de verdade.</div>
+      </details>
+      <details>
+        <summary>Tem certificado? <span class="pm">+</span></summary>
+        <div class="ans">Sim, você recebe o <strong>certificado Impacta</strong> conforme as regras de conclusão da plataforma.</div>
+      </details>
+    </div>
+  </div>
+</section>
+
+<!-- ================= FINAL CTA ================= -->
+<section class="sec reveal" style="padding-top:0">
+  <div class="wrap final-grid">
+    <div class="final-copy">
+      <span class="lab">Formação MySQL Profissional</span>
+      <h2 class="h-disp">Do primeiro algoritmo à <span class="nx">programação no banco</span></h2>
+      <p>Aprenda a pensar, modelar, consultar e automatizar bancos de dados com MySQL. 115 horas de conteúdo online com certificado Impacta.</p>
+      <div class="hero-cta">
+        <a href="#oferta" class="btn btn-neon">Quero me matricular
+          <span class="ar">→</span></a>
+      </div>
+    </div>
+    <div class="final-visual" aria-hidden="true">
+      <div class="fv-grid"></div>
+      <div class="fv-in">
+        <span class="mono-big"><span class="kw">SELECT</span> futuro<br><span class="kw">FROM</span> <span class="lm">você</span>;</span>
+        <span class="t">Impacta · Banco de Dados</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= FOOTER ================= -->
+<footer class="foot">
+  <div class="wrap">
+    <div class="foot-top">
+      <div>
+        <img class="imp" src="assets/impacta-branco.png" alt="Impacta">
+        <p class="desc">Formação MySQL Profissional: SQL, Modelagem e Programação no Banco. Uma formação online da Impacta para quem quer dominar banco de dados de verdade.</p>
+      </div>
+      <div class="cols">
+        <div class="col">
+          <h5>Formação</h5>
+          <a href="#jornada">Jornada</a>
+          <a href="#conteudo">Conteúdo</a>
+          <a href="#oferta">Investimento</a>
+        </div>
+        <div class="col">
+          <h5>Ajuda</h5>
+          <a href="#faq">Perguntas frequentes</a>
+          <a href="#">Falar com a equipe</a>
+        </div>
+      </div>
+    </div>
+    <div class="foot-legal">
+      <span>© 2026 Impacta Tecnologia · Todos os direitos reservados</span>
+      <span>MySQL® é marca de seus detentores · carga horária conforme páginas oficiais dos cursos</span>
+    </div>
+  </div>
+</footer>
+
+<!-- sticky CTA flutuante + WhatsApp -->
+<div class="sticky-cta" id="stickyCta">
+  <div class="wrap">
+    <div class="sticky-bar">
+      <div class="sticky-msg">
+        <span class="sticky-ic"><svg viewBox="0 0 24 24"><path d="M13 2L3 14h7l-1 8 10-12h-7z"/></svg></span>
+        <span class="sticky-tx"><b>Pronto para dominar MySQL?</b><span>Garanta sua vaga na condição de lançamento · R$ 397.</span></span>
+      </div>
+      <div class="sticky-actions">
+        <a href="#oferta" class="pill pill--primary">Quero me matricular <span class="ar">→</span></a>
+        <a href="https://api.whatsapp.com/send?phone=551132548300&text=Ol%C3%A1!%20Quero%20falar%20sobre%20a%20Forma%C3%A7%C3%A3o%20MySQL%20Profissional%20da%20Impacta." target="_blank" rel="noopener" class="pill pill--wa"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38c1.45.79 3.08 1.21 4.79 1.21 5.46 0 9.91-4.45 9.91-9.91C21.95 6.45 17.5 2 12.04 2zm0 18.13c-1.52 0-3.01-.41-4.3-1.18l-.31-.18-3.12.82.83-3.04-.2-.31a8.2 8.2 0 01-1.26-4.35c0-4.54 3.7-8.23 8.24-8.23 4.54 0 8.23 3.69 8.23 8.23 0 4.54-3.69 8.24-8.23 8.24zm4.52-6.16c-.25-.12-1.47-.72-1.69-.81-.23-.08-.39-.12-.56.13-.16.25-.64.81-.79.97-.14.17-.29.18-.54.06-.25-.12-1.05-.39-1.99-1.23-.74-.66-1.23-1.47-1.38-1.72-.14-.25-.01-.38.11-.51.11-.11.25-.29.37-.43.13-.14.17-.25.25-.41.08-.17.04-.31-.02-.43-.06-.12-.56-1.34-.76-1.84-.2-.48-.41-.42-.56-.43h-.48c-.17 0-.43.06-.66.31-.23.25-.86.85-.86 2.07 0 1.22.89 2.4 1.01 2.56.12.17 1.75 2.67 4.23 3.74.59.26 1.05.41 1.41.52.59.19 1.13.16 1.56.1.48-.07 1.47-.6 1.68-1.18.21-.58.21-1.07.14-1.18-.06-.11-.22-.17-.47-.29z"/></svg> WhatsApp</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+  const io = new IntersectionObserver((entries)=>{
+    entries.forEach(e=>{ if(e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target); } });
+  }, {threshold:.08});
+  document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
+
+  // sticky CTA: aparece ao rolar para fora do hero
+  const sticky=document.getElementById('stickyCta');
+  const hero=document.getElementById('top');
+  if(sticky&&hero){
+    const sObs=new IntersectionObserver((es)=>{
+      es.forEach(e=>{ sticky.classList.toggle('show', !e.isIntersecting); });
+    },{threshold:0});
+    sObs.observe(hero);
+  }
+
+  // Paulista — lazy-load (toca ao entrar na tela) + máscara final com logo Impacta
+  const pv=document.getElementById('paulistaVideo');
+  if(pv){
+    const ec=document.querySelector('.auth-endcard');
+    let started=false;
+    const vObs=new IntersectionObserver((es)=>{ es.forEach(e=>{ if(e.isIntersecting && !started){ started=true; const p=pv.play(); if(p&&p.catch) p.catch(()=>{}); } }); },{threshold:.25});
+    vObs.observe(pv);
+    pv.addEventListener('timeupdate',()=>{
+      const d=pv.duration||0;
+      if(ec){ if(d && pv.currentTime>=d-3.4) ec.classList.add('show'); else ec.classList.remove('show'); }
+    });
+  }
+
+  // Contador "Impacta em números"
+  const bstats=document.querySelectorAll('.bigstat');
+  if(bstats.length){
+    const fmt=(val,dec)=>{ let s=dec?val.toFixed(dec):Math.round(val).toString(); return s.replace('.',','); };
+    const run=(el)=>{
+      const t=parseFloat(el.dataset.target||'0'), dec=parseInt(el.dataset.decimals||'0',10);
+      const num=el.querySelector('.num'); const dur=1400; const t0=performance.now();
+      const tick=(now)=>{ const p=Math.min(1,(now-t0)/dur); const e=1-Math.pow(1-p,3); num.textContent=fmt(t*e,dec); if(p<1) requestAnimationFrame(tick); else num.textContent=fmt(t,dec); };
+      requestAnimationFrame(tick);
+    };
+    const nObs=new IntersectionObserver((es)=>{ es.forEach(e=>{ if(e.isIntersecting){ run(e.target); nObs.unobserve(e.target); } }); },{threshold:.4});
+    bstats.forEach(el=>nObs.observe(el));
+  }
+
+  // ===== Checkout + preservação de UTMs (rastreamento) =====
+  // >>> COLE AQUI a URL do checkout / link de pagamento <<<
+  const CHECKOUT_URL = 'https://impacta.site.engaged.com.br/p/checkout/nu3qkxhw84';
+  (function(){
+    if(!CHECKOUT_URL) return; // enquanto vazio, os botões mantêm o comportamento atual
+    const cur = new URLSearchParams(location.search);
+    const extra = ['gclid','fbclid','gad_source','gbraid','wbraid','msclkid','ttclid','sck','xcod','src','ref','affiliate'];
+    function build(base){
+      try{
+        const u = new URL(base, location.href);
+        cur.forEach((v,k)=>{ const lk=k.toLowerCase(); if(lk.startsWith('utm_') || extra.includes(lk)) u.searchParams.set(k,v); });
+        return u.toString();
+      }catch(e){ return base; }
+    }
+    const dest = build(CHECKOUT_URL);
+    document.querySelectorAll('.btn-neon, .pill--primary').forEach(a=>{ a.setAttribute('href', dest); a.setAttribute('rel','noopener'); });
+  })();
+
+  // ===== Timer de urgência (evergreen 48h por visitante) =====
+  (function(){
+    const clock=document.querySelector('.ot-clock'); if(!clock) return;
+    const KEY='mysqlLpDeadline', DUR=48*3600*1000, now=Date.now();
+    let dl=parseInt(localStorage.getItem(KEY)||'0',10);
+    if(!dl || dl<=now){ dl=now+DUR; localStorage.setItem(KEY,String(dl)); }
+    const H=clock.querySelector('[data-h]'),M=clock.querySelector('[data-m]'),S=clock.querySelector('[data-s]');
+    const pad=n=>String(n).padStart(2,'0');
+    function tick(){ let d=Math.max(0,dl-Date.now()); H.textContent=pad(Math.floor(d/3600000)); M.textContent=pad(Math.floor(d%3600000/60000)); S.textContent=pad(Math.floor(d%60000/1000)); }
+    tick(); setInterval(tick,1000);
+  })();
+</script>
+</body>
+</html>
