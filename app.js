@@ -18,9 +18,17 @@
     CAMPAIGN_SLUG:   'mysql-lancamento', // padrão; campanhas reais chegam via utm_campaign
     IRIS_EVENTS_URL: 'https://iris.technowhub.ai/api/events',
     CURRENCY:        'BRL',
-    META_PIXEL_ID:   '',   // preencher quando o Pixel entrar (vazio = no-op)
-    GADS_ID:               '', // AW-XXXXXXXXXX (vazio = no-op)
-    GADS_CONVERSION_LABEL: ''
+    // ─── Meta Ads (Pixel) — preencher com o ID do Pixel ao criar a campanha ───
+    // Vazio = no-op. Eventos enviados: PageView + ViewContent (no load),
+    // InitiateCheckout (clique em matricular), Lead + Contact (clique no WhatsApp).
+    META_PIXEL_ID:   '',
+    // ─── Google Ads (gtag) — preencher ao criar a campanha ───
+    // GADS_ID: tag do Google Ads (AW-XXXXXXXXXX). Vazio = no-op.
+    // Os *_LABEL são os rótulos de conversão (AW-XXXX/yyyyyy) criados na conta
+    // do Google Ads — um para "matrícula/checkout" e outro para "WhatsApp".
+    GADS_ID:              '',
+    GADS_CHECKOUT_LABEL:  '',  // conversão no clique de matrícula (checkout)
+    GADS_WHATS_LABEL:     ''   // conversão no clique do WhatsApp
   };
 
   var UTM_KEYS = ['utm_source', 'utm_medium', 'utm_campaign', 'utm_content', 'utm_term'];
@@ -83,7 +91,11 @@
       el.setAttribute('href', withTracking(el.getAttribute('href') || '', params));
       el.addEventListener('click', function () {
         sendIrisEvent('click_whats', { channel: 'whatsapp' });
+        // Meta: WhatsApp conta como Contact e também como Lead
         track('Contact', { placement: 'whatsapp' });
+        track('Lead', { content_name: 'WhatsApp', placement: 'whatsapp' });
+        // Google Ads: conversão de WhatsApp
+        gadsConversion(CFG.GADS_WHATS_LABEL);
       });
     });
   }
@@ -95,7 +107,10 @@
       el.dataset.buyBound = '1';
       el.addEventListener('click', function () {
         sendIrisEvent('click_compra', { placement: 'checkout' });
-        track('InitiateCheckout', { content_name: 'Formacao MySQL Profissional' });
+        // Meta: início de checkout (otimização da campanha de vendas)
+        track('InitiateCheckout', { content_name: 'Formacao MySQL Profissional', content_type: 'product', currency: CFG.CURRENCY });
+        // Google Ads: conversão de matrícula (checkout)
+        gadsConversion(CFG.GADS_CHECKOUT_LABEL);
       });
     });
   }
@@ -129,6 +144,14 @@
     if (window.dataLayer) { window.dataLayer.push(Object.assign({ event: eventName }, params)); }
   }
 
+  // Dispara uma conversão pontual no Google Ads (clique de checkout / WhatsApp).
+  // No-op enquanto GADS_ID ou o label estiverem vazios.
+  function gadsConversion(label) {
+    if (window.gtag && CFG.GADS_ID && label) {
+      try { window.gtag('event', 'conversion', { send_to: label }); } catch (e) {}
+    }
+  }
+
   function apply() {
     var params = getTrackingParams();
     decorateWhatsApp(params);
@@ -140,5 +163,8 @@
   apply();
   new MutationObserver(apply).observe(document.body, { childList: true, subtree: true });
 
+  // Meta: visualização do produto (além do PageView disparado no init do Pixel)
+  track('ViewContent', { content_name: 'Formacao MySQL Profissional', content_type: 'product' });
+  // IRIS: visita da LP
   sendIrisEvent('lp_view');
 })();
