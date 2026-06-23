@@ -21,7 +21,7 @@
     // ─── Meta Ads (Pixel) — preencher com o ID do Pixel ao criar a campanha ───
     // Vazio = no-op. Eventos enviados: PageView + ViewContent (no load),
     // InitiateCheckout (clique em matricular), Lead + Contact (clique no WhatsApp).
-    META_PIXEL_ID:   '',
+    META_PIXEL_ID:   '1540836994378279',
     // ─── Google Ads (gtag) — preencher ao criar a campanha ───
     // GADS_ID: tag do Google Ads (AW-XXXXXXXXXX). Vazio = no-op.
     // Os *_LABEL são os rótulos de conversão (AW-XXXX/yyyyyy) criados na conta
