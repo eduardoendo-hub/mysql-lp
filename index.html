@@ -375,30 +375,76 @@
 <!-- ================= PARCERIA · OLHAR DIGITAL ================= -->
 <style>
   .partner{position:relative;overflow:hidden;padding:84px 0;border-top:1px solid var(--line);border-bottom:1px solid var(--line);
-    background:linear-gradient(180deg,#050A07,#030504)}
-  .partner::before{content:"";position:absolute;inset:0;pointer-events:none;
-    background:radial-gradient(640px 300px at 50% -8%,rgba(55,214,122,.10),transparent 70%)}
+    background:linear-gradient(180deg,#040907,#020402)}
+  .partner::before{content:"";position:absolute;inset:0;pointer-events:none;z-index:0;
+    background:radial-gradient(680px 320px at 50% -8%,rgba(40,200,110,.12),transparent 72%)}
   .partner .wrap{position:relative;z-index:1}
   .partner .ph{text-align:center;max-width:780px;margin:0 auto}
-  .partner .ph .lab{color:#52e08c}
   .partner .ph h2{font-family:var(--sans);font-weight:700;letter-spacing:-.02em;line-height:1.08;color:#fff;
     font-size:clamp(28px,3.4vw,44px);margin-top:16px}
-  .partner .ph h2 .gn{color:#37D67A}
+  .partner .ph h2 .gn{color:var(--blue)}
   .partner .ph p{color:var(--txt-2);font-size:17px;line-height:1.62;margin-top:18px}
   .plock{display:flex;align-items:center;justify-content:center;gap:26px;margin:34px auto 4px;flex-wrap:wrap}
   .plock img{height:30px;width:auto;opacity:.95}
   .plock img.imp-l{height:24px}
   .plock .x{color:var(--txt-3);font-size:20px;font-weight:300}
   .pstats{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-top:42px}
-  .pstat{background:var(--panel);border:1px solid var(--line-2);border-radius:16px;padding:30px 22px;text-align:center;transition:.2s}
-  .pstat:hover{border-color:rgba(55,214,122,.38);transform:translateY(-3px)}
-  .pstat .v{font-family:var(--sans);font-weight:800;font-size:clamp(32px,3.4vw,44px);line-height:1;letter-spacing:-.03em;color:#37D67A}
+  .pstat{background:rgba(12,12,13,.82);backdrop-filter:blur(4px);border:1px solid var(--line-2);border-radius:16px;padding:30px 22px;text-align:center;transition:.2s}
+  .pstat:hover{border-color:rgba(10,136,244,.4);transform:translateY(-3px)}
+  .pstat .v{font-family:var(--sans);font-weight:800;font-size:clamp(32px,3.4vw,44px);line-height:1;letter-spacing:-.03em;color:var(--blue)}
   .pstat .l{font-size:14px;color:var(--txt-2);margin-top:11px;line-height:1.4}
   .pnote{max-width:840px;margin:40px auto 0;text-align:center;color:var(--txt-2);font-size:16.5px;line-height:1.65}
   .pnote b{color:var(--txt)}
+  /* fundo animado (estilo corporate.technowhub.ai) recolorido em verde — tom Olhar Digital */
+  .pflow{position:absolute;inset:0;z-index:0;width:100%;height:100%;pointer-events:none}
+  .pflow .iaf-band{opacity:.42}
+  .pflow .iaf-fl,.pflow .iaf-blue,.pflow .iaf-glow,.pflow .iaf-red,.pflow .iaf-pulse{fill:none;stroke-linecap:round;vector-effect:non-scaling-stroke}
+  .pflow .iaf-fl{stroke:rgba(120,230,165,.13);stroke-width:1}
+  .pflow .iaf-blue{stroke:rgba(200,255,220,.5);stroke-width:1.3}
+  .pflow .iaf-glow-b{stroke:rgba(90,225,150,.22);stroke-width:3}
+  .pflow .iaf-red{stroke:rgba(40,200,110,.5);stroke-width:1.3}
+  .pflow .iaf-glow-r{stroke:rgba(34,180,96,.24);stroke-width:4}
+  .pflow .iaf-pulse{stroke:rgba(190,255,215,.7);stroke-width:2.2;stroke-dasharray:24 2000;animation:pflowPulse 4.2s linear infinite}
+  .pflow .iaf-pulse-b{stroke:rgba(210,255,225,.6);animation:pflowPulse 5.6s linear infinite;animation-delay:-2.2s}
+  .pflow-g{animation:pflowDrift 17s ease-in-out infinite alternate}
+  .pflow .iaf-red,.pflow .iaf-glow-r,.pflow .iaf-blue{animation:pflowLine 6s ease-in-out infinite}
+  @keyframes pflowPulse{from{stroke-dashoffset:0}to{stroke-dashoffset:-2024}}
+  @keyframes pflowDrift{from{transform:translate3d(0,0,0)}to{transform:translate3d(-44px,28px,0)}}
+  @keyframes pflowLine{0%,100%{opacity:.82}50%{opacity:1}}
+  @media(prefers-reduced-motion:reduce){.pflow-g,.pflow .iaf-red,.pflow .iaf-glow-r,.pflow .iaf-blue,.pflow .iaf-pulse,.pflow .iaf-pulse-b{animation:none}}
   @media(max-width:760px){.partner{padding:60px 0}.pstats{grid-template-columns:repeat(2,1fr)}}
 </style>
 <section class="partner reveal" id="parceria">
+  <svg class="pflow" viewBox="0 0 1440 900" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+    <defs>
+      <linearGradient id="pfFoldA" x1="0.1" y1="0" x2="0.3" y2="1">
+        <stop offset="0" stop-color="#0c1812" stop-opacity="0"/>
+        <stop offset="0.5" stop-color="#163a26" stop-opacity="0.55"/>
+        <stop offset="1" stop-color="#08120c" stop-opacity="0"/>
+      </linearGradient>
+      <linearGradient id="pfFoldB" x1="0.1" y1="0" x2="0.35" y2="1">
+        <stop offset="0" stop-color="#0a160f" stop-opacity="0"/>
+        <stop offset="0.55" stop-color="#10301f" stop-opacity="0.55"/>
+        <stop offset="1" stop-color="#06100a" stop-opacity="0"/>
+      </linearGradient>
+      <filter id="pfGlow" x="-30%" y="-30%" width="160%" height="160%"><feGaussianBlur stdDeviation="6"/></filter>
+    </defs>
+    <g class="pflow-g">
+      <path class="iaf-band" d="M-100 340 C 420 220, 900 560, 1540 300 L1540 470 C 900 700, 420 380, -100 500 Z" fill="url(#pfFoldA)"/>
+      <path class="iaf-band" d="M-100 600 C 460 450, 960 800, 1540 560 L1540 760 C 960 980, 460 640, -100 760 Z" fill="url(#pfFoldB)"/>
+      <path class="iaf-fl" d="M-80 300 C 380 190, 840 470, 1540 270"/>
+      <path class="iaf-fl" d="M-80 440 C 400 310, 870 610, 1540 410"/>
+      <path class="iaf-fl" d="M-80 560 C 420 420, 900 730, 1540 540"/>
+      <path class="iaf-glow iaf-glow-b" d="M-80 380 C 380 250, 870 540, 1540 330" filter="url(#pfGlow)"/>
+      <path class="iaf-blue" d="M-80 380 C 380 250, 870 540, 1540 330"/>
+      <path class="iaf-pulse iaf-pulse-b" d="M-80 380 C 380 250, 870 540, 1540 330"/>
+      <path class="iaf-glow iaf-glow-r" d="M-80 720 C 470 560, 970 880, 1540 690" filter="url(#pfGlow)"/>
+      <path class="iaf-red" d="M-80 720 C 470 560, 970 880, 1540 690"/>
+      <path class="iaf-pulse" d="M-80 720 C 470 560, 970 880, 1540 690"/>
+      <path class="iaf-glow iaf-glow-r" d="M-80 830 C 490 670, 990 960, 1540 800" filter="url(#pfGlow)"/>
+      <path class="iaf-red" d="M-80 830 C 490 670, 990 960, 1540 800"/>
+    </g>
+  </svg>
   <div class="wrap">
     <div class="ph">
       <span class="lab noline">Em parceria com o Olhar Digital</span>
