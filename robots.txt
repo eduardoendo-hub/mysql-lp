@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://mysql.technowhub.ai/sitemap.xml
+Sitemap: https://impacta.com.br/cursos/mysql/sitemap.xml
