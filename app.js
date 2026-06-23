@@ -27,8 +27,8 @@
     // Os *_LABEL são os rótulos de conversão (AW-XXXX/yyyyyy) criados na conta
     // do Google Ads — um para "matrícula/checkout" e outro para "WhatsApp".
     GADS_ID:              'AW-1056567970',
-    GADS_CHECKOUT_LABEL:  '',  // conversão no clique de matrícula (checkout) — FALTA o label "AW-1056567970/____"
-    GADS_WHATS_LABEL:     ''   // conversão no clique do WhatsApp — FALTA o label "AW-1056567970/____"
+    GADS_CHECKOUT_LABEL:  'AW-1056567970/3gNwCJyYncQcEKLl5_cD',  // conversão "Matrícula MySQL"
+    GADS_WHATS_LABEL:     'AW-1056567970/W7XaCIvbrsQcEKLl5_cD'   // conversão "WhatsApp MySQL"
   };
 
   var UTM_KEYS = ['utm_source', 'utm_medium', 'utm_campaign', 'utm_content', 'utm_term'];
